@@ -1,2 +1,0 @@
-class TeacherKlass < ApplicationRecord
-end
