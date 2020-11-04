@@ -26,6 +26,7 @@ class AssignmentsController < ApplicationController
         render json: @assignment
     end
 
+    
     private
 
     def assignment_params
