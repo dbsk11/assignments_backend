@@ -5,4 +5,12 @@ class Student < ApplicationRecord
     has_many :teacher_klasses, through: :student_klasses
     has_secure_password
 
+    def display_age
+        Time.now.year - self.dob.slice(0,4).to_i
+    end
+    
+    def fullname
+        "#{self.first_name} #{self.last_name}"
+    end
+
 end

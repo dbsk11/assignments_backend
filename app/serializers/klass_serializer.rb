@@ -1,3 +1,3 @@
 class KlassSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :subject
 end

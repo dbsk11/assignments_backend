@@ -1,3 +1,4 @@
 class TeacherKlassSerializer < ActiveModel::Serializer
-  attributes :id, :first_name, :last_name, :subject, :email, :username, :password
+  attributes :id, :teacher_id
+  belongs_to :klass
 end
