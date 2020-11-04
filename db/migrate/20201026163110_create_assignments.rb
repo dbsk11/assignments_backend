@@ -4,6 +4,8 @@ class CreateAssignments < ActiveRecord::Migration[6.0]
       t.string :task
       t.string :course
       t.string :grade
+      t.belongs_to :teacher, null: false, foreign_key: true
+      t.belongs_to :student, null: false, foreign_key: true
 
       t.timestamps
     end
