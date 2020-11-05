@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   # Student Routes
   get '/students', to: 'students#index'
   get '/students/:id', to: 'students#show'
-  get '/students/stay_logged_in', to: 'students#stay_logged_in'
   post '/students/login', to: 'students#login'
+  get '/students/stay_logged_in', to: 'students#stay_logged_in'
 
   # Assignment Routes
   get '/assignments', to: 'assignments#index'
