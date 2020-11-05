@@ -45,4 +45,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #JSON Web Token
-gem "jwt", "~> 2.2"
+gem "jwt", "~> 2.1"

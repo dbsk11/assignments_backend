@@ -1,4 +1,5 @@
 class TeachersController < ApplicationController
+  before_action :authorized, only: [:stay_logged_in]
 
   # GET /teachers
   def index
@@ -8,6 +9,7 @@ class TeachersController < ApplicationController
 
   # GET /teachers/1
   def show
+    @teacher = Teacher.find(params[:id])
     render json: @teacher
   end
 
